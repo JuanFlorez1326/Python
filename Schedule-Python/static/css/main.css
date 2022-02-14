@@ -1,0 +1,19 @@
+body {
+  background-color: #F1933A;
+}
+
+#img{
+  width: 34%;
+  margin-left: 8%;
+  margin-top: 2%;
+  border-style: solid;
+  border-color: black;
+}
+
+#boton {
+  width: 97%;
+  margin-top: 2%;
+  margin-left: 1%;
+}
+
+

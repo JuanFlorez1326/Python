@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendame</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for ('static' , filename='css/login.css')}}">
+    <link rel="icon" type="image/png" href="{{ url_for ('static' , filename='images/favicon.ico')}}">
+
+</head>
+<body>
+    <div id="cont">
+        <header>
+            <img src="{{ url_for ('static' , filename='images/agendame.jpeg')}}" class="img">
+        </header>
+        <article>
+            <section>            
+            <form action="/" method="POST" id="form">
+                <h1>LOGIN</h1>
+                <p>Correo electronico</p>
+                <input name="correo" type="email">
+                <p>Contraseña</p>
+                <input name="contraseña" type="password">
+                <p>{{value}}</p> 
+                <div class="boton">
+                <input type="submit" value="Ingresar" id="boton"> <br>
+                <input type="button" onclick="location.href='/registro'" value="Registrar" id="boton2">
+            </form>
+            </section>
+            <aside>
+                <img src="{{ url_for ('static' , filename='images/0.jpg')}}" id="calendar">
+            </aside>
+        </article>
+        <footer class="foot">
+            <p id="all">All rights reserved &copy;. Juan Florez and Sebastian Ruiz</p>
+            <p id="version">Version 1.0</p>
+        </footer>
+    </div>
+</body>
+</html>

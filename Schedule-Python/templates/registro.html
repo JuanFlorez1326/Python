@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for ('static' , filename='css/login.css')}}">
+    <link rel="icon" type="image/png" href="{{ url_for ('static' , filename='images/favicon.ico')}}">
+    <title>Agendame</title>
+</head>
+    <body>
+    <div id="registro">
+        <header>
+            <img src="{{ url_for ('static' , filename='images/agendame.jpeg')}}" id="logotype">
+            
+        </header>
+        <article>
+            <h1 id="title">Nuevo usuario</h1>
+            <section>
+               
+                <form action="/registro" method="POST" id="form_registro">
+                    
+                    <p>Nombre</p>
+                    <input name="nombre" type="text">
+                    <p>Apellidos</p>
+                    <input name="apellidos" type="text">
+                    <p>Edad</p>
+                    <input name="edad" type="number">
+                    <p>Ocupacion</p>
+                    <input name="ocupacion" type="text">
+                    <p>Correo electronico</p>
+                    <input name="correo" type="email">
+                    <p>Contraseña</p>
+                    <input name="contraseña" type="password">
+                    <br>
+                    <br>
+                    <input type="submit" value="Registrarme" id="buton"><br><br>
+                    <input type="button" onclick="location.href='/'" value="Ingresar" id="buton2"><br><br>
+                </form>
+                
+            </section>
+        </article>
+    </div>
+</body>
+
+</html>
