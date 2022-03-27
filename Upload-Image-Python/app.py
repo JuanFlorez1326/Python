@@ -1,6 +1,6 @@
 #app.py
 from flask import Flask, flash, request, redirect, url_for, render_template
-import urllib.request
+import urllib3.request
 import os
 from werkzeug.utils import secure_filename
  

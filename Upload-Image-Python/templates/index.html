@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Python Flask Upload and display image</title>
+    <title>Upload And Display Image</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../static/css/style.css">
@@ -10,7 +10,7 @@
 <div class="container">
 <div class="row">
     <h2>Select a File to Upload</h2>
-    <p>
+    <p class="txtText">
         {% with messages = get_flashed_messages() %}
           {% if messages %}
             <ul>
@@ -23,7 +23,7 @@
     </p>
     {% if filename %}
         <div>
-            <img src="{{ url_for('display_image', filename=filename) }}">
+            <img class="imgUpload" src="{{ url_for('display_image', filename=filename) }}">
         </div>
     {% endif %}
     <form method="post" action="/" enctype="multipart/form-data">
